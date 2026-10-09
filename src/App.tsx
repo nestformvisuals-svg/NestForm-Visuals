@@ -80,6 +80,14 @@ export default function App() {
               flat into an attainable luxury haven without an unrealistic budget.
             </p>
 
+            {/* Nationwide Land & Building Capability Callout */}
+            <div className="p-3.5 rounded-2xl bg-[#19212c]/90 border border-[#c5a059]/40 flex items-center gap-3 text-xs sm:text-sm shadow-lg">
+              <span className="text-base sm:text-lg">🏛️</span>
+              <p className="text-neutral-200 font-normal">
+                <strong className="text-[#f4d17c] font-semibold">Pan-India Architectural Advisory:</strong> Have land or a building anywhere in India, irrespective of size? We can help you visualize, plan, and analyze with complete 2D/3D clarity.
+              </p>
+            </div>
+
             {/* Quick Metrics Bar */}
             <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-6 text-xs font-mono-cad text-neutral-400">
               <div className="flex items-center gap-1.5">
@@ -308,10 +316,10 @@ export default function App() {
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-serif-luxury font-bold text-white">
-                Planning Your Compact Indian Home Renovation?
+                Have Land or a Building Anywhere in India, Irrespective of Size?
               </h3>
               <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
-                Whether you have a 10×16 ft living-dining room or an irregular builder layout in Mumbai, Bengaluru, Pune, Delhi NCR, or Hyderabad, we provide custom 2D spatial layouts, 3D photorealistic visualizations, and transparent Indian market BOQ execution estimates.
+                Whether you have raw land, a commercial plot, a standalone bungalow, or a compact 2BHK flat anywhere in India—irrespective of size—NestForm Visuals can help you visualize, plan, and analyze. We provide 2D architectural CAD layouts, photorealistic 3D spatial renders, and transparent Indian turnkey BOQ estimates.
               </p>
             </div>
 

@@ -22,8 +22,8 @@ export const Header: React.FC<Props> = ({ onOpenSpecSheet, activeTab, setActiveT
       <div className="bg-[#10141a] border-b border-[#1f2631] px-4 sm:px-6 lg:px-8 py-1.5 text-[11px] font-mono-cad text-neutral-300 flex flex-wrap items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-          <span className="text-neutral-400">Interior Consultation Available:</span>
-          <span className="text-white font-medium">Pan-India Compact Flat Planning</span>
+          <span className="text-[#f4d17c] font-medium">Pan-India Architectural Advisory:</span>
+          <span className="text-neutral-300">Have land or a building anywhere in India, irrespective of size? We can help visualize and analyze.</span>
         </div>
 
         <div className="flex items-center gap-4 text-xs">
