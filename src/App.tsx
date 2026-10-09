@@ -295,26 +295,99 @@ export default function App() {
             </div>
           </div>
         )}
+        {/* STUDIO CONTACT & CONSULTATION BANNER */}
+        <section className="bg-gradient-to-r from-[#171d26] via-[#1c232f] to-[#171d26] rounded-3xl border border-[#2a3442] p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-96 h-96 bg-[#c5a059]/5 rounded-full blur-3xl pointer-events-none" />
+          
+          <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+            <div className="space-y-2 max-w-2xl">
+              <div className="flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <span className="text-xs font-mono-cad uppercase text-[#d4af37] tracking-wider font-semibold">
+                  Get In Touch With NestForm Visuals
+                </span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-serif-luxury font-bold text-white">
+                Planning Your Compact Indian Home Renovation?
+              </h3>
+              <p className="text-xs sm:text-sm text-neutral-300 font-light leading-relaxed">
+                Whether you have a 10×16 ft living-dining room or an irregular builder layout in Mumbai, Bengaluru, Pune, Delhi NCR, or Hyderabad, we provide custom 2D spatial layouts, 3D photorealistic visualizations, and transparent Indian market BOQ execution estimates.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0">
+              <a
+                href="https://wa.me/919156562467?text=Hi%20NestForm%20Visuals%2C%20I%20am%20interested%20in%20renovating%20my%20compact%20apartment%20living-dining%20space."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-emerald-500 hover:brightness-110 text-white font-semibold text-xs flex items-center justify-center gap-2 shadow-lg shadow-emerald-900/30 transition-all"
+              >
+                <span className="text-base">💬</span>
+                <span>Chat on WhatsApp (+91 91565 62467)</span>
+              </a>
+
+              <div className="flex items-center gap-2">
+                <a
+                  href="mailto:nestformvisuals@gmail.com"
+                  className="flex-1 px-4 py-2.5 rounded-xl bg-[#212a36] hover:bg-[#2b3746] text-neutral-200 border border-[#344154] text-xs font-mono-cad flex items-center justify-center gap-2 transition-all"
+                >
+                  <span>✉</span>
+                  <span>nestformvisuals@gmail.com</span>
+                </a>
+
+                <a
+                  href="tel:+919156562467"
+                  className="px-4 py-2.5 rounded-xl bg-[#212a36] hover:bg-[#2b3746] text-[#f4d17c] border border-[#344154] text-xs font-mono-cad flex items-center justify-center gap-1.5 transition-all"
+                >
+                  <span>📞</span>
+                  <span>Call Us</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       {/* FOOTER */}
       <footer className="border-t border-[#1e242d] bg-[#0a0d11] py-8 mt-12 text-xs text-neutral-400">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Compass className="w-4 h-4 text-[#c5a059]" />
-            <span className="font-serif-luxury font-bold text-neutral-200">
-              NestForm Visuals
-            </span>
-            <span className="text-neutral-600">|</span>
-            <span>Intelligent Space Planning for Modern Indian Homes</span>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 border-b border-[#1b212a]">
+            <div>
+              <div className="flex items-center gap-2">
+                <Compass className="w-5 h-5 text-[#c5a059]" />
+                <span className="font-serif-luxury font-bold text-base text-white">
+                  NestForm Visuals
+                </span>
+                <span className="text-neutral-600">|</span>
+                <span className="text-neutral-300">Intelligent Space Planning &amp; Attainable Luxury</span>
+              </div>
+              <p className="text-[11px] text-neutral-400 mt-1 max-w-xl">
+                Specialized architectural 2D floor plans, photorealistic 3D visualization, and realistic Indian market interior estimates for compact residential apartments.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 text-xs font-mono-cad text-neutral-300">
+              <a href="mailto:nestformvisuals@gmail.com" className="hover:text-[#c5a059] flex items-center gap-1.5">
+                <span>✉ nestformvisuals@gmail.com</span>
+              </a>
+              <span className="hidden sm:inline text-neutral-600">•</span>
+              <a href="tel:+919156562467" className="hover:text-[#c5a059] flex items-center gap-1.5">
+                <span>📞 +91 91565 62467</span>
+              </a>
+            </div>
           </div>
 
-          <div className="flex items-center gap-4 text-neutral-500 font-mono-cad text-[11px]">
-            <span>10×16 FT Baseline</span>
-            <span>•</span>
-            <span>Vastu &amp; Ergonomics Compliant</span>
-            <span>•</span>
-            <span>Realistic Indian Market BOQ</span>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-neutral-500 font-mono-cad text-[11px]">
+            <div>
+              © {new Date().getFullYear()} NestForm Visuals. All rights reserved.
+            </div>
+            <div className="flex items-center gap-3">
+              <span>10×16 FT Baseline</span>
+              <span>•</span>
+              <span>Vastu &amp; Ergonomics Compliant</span>
+              <span>•</span>
+              <span>Realistic Indian Market BOQ</span>
+            </div>
           </div>
         </div>
       </footer>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Compass, Sparkles, Printer, FileText, ArrowRight, Share2, Check } from 'lucide-react';
+import { Compass, Sparkles, Printer, FileText, ArrowRight, Share2, Check, Phone, Mail, MessageSquare } from 'lucide-react';
 
 interface Props {
   onOpenSpecSheet: () => void;
@@ -17,8 +17,45 @@ export const Header: React.FC<Props> = ({ onOpenSpecSheet, activeTab, setActiveT
   };
 
   return (
-    <header className="border-b border-[#222831] bg-[#0c1015]/90 backdrop-blur-md sticky top-0 z-40">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
+    <header className="border-b border-[#222831] bg-[#0c1015]/95 backdrop-blur-md sticky top-0 z-40">
+      {/* Top Contact Strip */}
+      <div className="bg-[#10141a] border-b border-[#1f2631] px-4 sm:px-6 lg:px-8 py-1.5 text-[11px] font-mono-cad text-neutral-300 flex flex-wrap items-center justify-between gap-2">
+        <div className="flex items-center gap-2">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+          <span className="text-neutral-400">Interior Consultation Available:</span>
+          <span className="text-white font-medium">Pan-India Compact Flat Planning</span>
+        </div>
+
+        <div className="flex items-center gap-4 text-xs">
+          <a
+            href="mailto:nestformvisuals@gmail.com"
+            className="flex items-center gap-1.5 text-neutral-300 hover:text-[#f4d17c] transition-colors"
+          >
+            <Mail className="w-3.5 h-3.5 text-[#c5a059]" />
+            <span>nestformvisuals@gmail.com</span>
+          </a>
+
+          <a
+            href="tel:+919156562467"
+            className="flex items-center gap-1.5 text-neutral-300 hover:text-[#f4d17c] transition-colors"
+          >
+            <Phone className="w-3.5 h-3.5 text-[#c5a059]" />
+            <span>+91 91565 62467</span>
+          </a>
+
+          <a
+            href="https://wa.me/919156562467?text=Hi%20NestForm%20Visuals%2C%20I%20am%20interested%20in%20renovating%20my%20compact%202BHK."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:flex items-center gap-1 px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-300 border border-emerald-800/60 hover:bg-emerald-900/80 transition-all font-medium"
+          >
+            <MessageSquare className="w-3 h-3 text-emerald-400" />
+            <span>WhatsApp Us</span>
+          </a>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex flex-wrap items-center justify-between gap-4">
         {/* Brand Logo & Title */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#c5a059] to-[#8c6b29] p-0.5 shadow-lg shadow-[#c5a059]/20 flex items-center justify-center">

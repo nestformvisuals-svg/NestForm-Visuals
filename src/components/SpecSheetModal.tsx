@@ -307,7 +307,9 @@ export const SpecSheetModal: React.FC<Props> = ({ concept, onClose }) => {
   </table>
 
   <div class="footer">
-    <div>Architect Signoff: NestForm Visuals | nestformvisuals@gmail.com</div>
+    <div>
+      <strong>NestForm Visuals</strong> | Email: <a href="mailto:nestformvisuals@gmail.com">nestformvisuals@gmail.com</a> | Phone/WhatsApp: <a href="tel:+919156562467">+91 91565 62467</a>
+    </div>
     <div>Circulation: 38" Unimpeded Corridor | 3000K Warm Lighting</div>
   </div>
 
@@ -566,14 +568,16 @@ export const SpecSheetModal: React.FC<Props> = ({ concept, onClose }) => {
           </div>
 
           {/* Signoff Footer */}
-          <div className="pt-6 border-t border-[#2e3846] print:border-black flex justify-between items-end text-[11px] font-mono-cad text-neutral-400 print:text-neutral-600">
+          <div className="pt-6 border-t border-[#2e3846] print:border-black flex flex-wrap justify-between items-end gap-3 text-[11px] font-mono-cad text-neutral-400 print:text-neutral-600">
             <div>
-              <div>Site Verification: _______________________</div>
-              <div className="mt-1">Architect Signoff: NestForm Visuals</div>
+              <div className="text-white font-semibold print:text-black">NESTFORM VISUALS STUDIO</div>
+              <div className="mt-0.5 text-neutral-300 print:text-neutral-700">
+                Email: <a href="mailto:nestformvisuals@gmail.com" className="text-[#c5a059] hover:underline">nestformvisuals@gmail.com</a> | Phone: <a href="tel:+919156562467" className="text-[#c5a059] hover:underline">+91 91565 62467</a>
+              </div>
             </div>
             <div className="text-right">
               <div>Vastu Check: Passed</div>
-              <div>Circulation Corridor: 38&quot; Clear</div>
+              <div>Circulation Corridor: 38&quot; Clear | 3000K Warm Lighting</div>
             </div>
           </div>
         </div>
